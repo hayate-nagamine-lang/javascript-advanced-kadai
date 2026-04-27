@@ -108,13 +108,11 @@ const gameOver = id => {
 
   setTimeout(() => {
     const result = confirm(rankCheck(score));
-  },10);
-
-
-  // OKボタンをクリックされたらリロードする
-  if(result == true) {
+     if(result == true) {
     window.location.reload();
   }
+  },10);
+
 };
 
 // カウントダウンタイマー
